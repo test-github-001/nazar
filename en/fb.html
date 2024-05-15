@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sceleton</title>
+    <link rel="stylesheet" href="4ListProd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+            <header>
+                <a style="color:rgb(187, 141, 141);" href="3info.html">GamesXDarkFantasy</a>
+                <a style="font-size: 30px; color: white;" href="2shop.html">DarkShop</a>
+                <a style= "color:rgb(187, 141, 141);" href="1Main.html" >Main</a>
+            </header>
+<body>
+    <img src="imgLP/FB.png" class="img">
+    <h1 class="h1">Fortune ball</h1>
+    <h2 class="h2">Predicts your fate with 100% probability (he is enchanted to tell the truth)</h2>
+    <h3></h3>
+    <Div class="container">
+    <button class="cart" type="submit" onclick="openPopup()">On cart</button>
+    <div class="popup" id="popup">
+        <h2>The cart is not ready yet</h2>
+        <p>sorry</p>
+        <button type="button" onclick="closePopup()" style="height: 30px; width: 60px; background:white;">OK</button>
+    </div>
+    </Div>
+    <footer>
+        <a href="4About.html" class="dfd" style="font-size: 40px;">AboutUs</a>
+        <p style="padding-top: 250px; padding-right: 50px; font-size: 20px;">©2024nazarill</p>
+    </footer>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+
+    </script>
+</body>
+</html> 
